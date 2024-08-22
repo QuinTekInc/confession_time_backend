@@ -1,0 +1,7 @@
+username: confession.quintech@gmail.com
+
+emailPassword: @quinConfessiontech!007
+
+AppName: CTime Email
+
+AppPassword: kryt spkl deqo wjdd

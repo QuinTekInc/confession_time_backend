@@ -1,0 +1,13 @@
+
+for this backend project, the virtual is stored in 
+/home/python-environments/env 
+
+run 'source {path_to_env} activate' from the command line
+
+the backend is currently using the 
+    djangorestframework
+    cors
+
+
+#FIXES
+Need to make the email sender to work.

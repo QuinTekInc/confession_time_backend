@@ -21,7 +21,7 @@ print(f'Base Directory: {BASE_DIR}')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-oqq2&_k&y@)pp@g+oz$%31zy0q)-7!^f44-@8nun9=o-zgi@7%'
+SECRET_KEY = utils.decryptStr('iofslt<nsxjhzwj<tvv7+~p+D_.uu_l:tE)*86ED5v.<c&}k99<_dszse\\t<Eln_c*')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

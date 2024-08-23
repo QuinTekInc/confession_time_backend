@@ -29,8 +29,8 @@ DEBUG = True
 #email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'confession.quintech@gmail.com'
-EMAIL_HOST_PASSWORD = 'krytspkldeqowjdd'
+EMAIL_HOST_USER = utils.decryptStr('htskjxxnts=vznsyjhm_lrfnq=htr') 
+EMAIL_HOST_PASSWORD = utils.decryptStr('pwDyxupqijvtBoii')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False

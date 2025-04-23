@@ -1,0 +1,37 @@
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Time</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+
+    <header class="app-bar">
+
+        <div class="app-title">Confession Time</div>
+
+        <div class="nav-links">
+
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+
+        </div>
+
+    </header>
+
+    {% block content %}CD 
+    {% endblock %}
+
+    <footer class="footer">
+        <p>&copy; 2024 Confession Time. All rights reserved.</p>
+        <p class="confidentiality">Your confidentiality and anonymity is our priority.</p>
+    </footer>
+    
+</body>
+</html>

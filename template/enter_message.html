@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Send a message
+{% endblock %}
+
+
+<!--The place where the user will his message-->
+{% block content %}
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <div class="container">
+
+            <h2>Send a Confession to {{receiver}}</h2>
+
+            <div class="textarea-container">
+                <textarea name="message-entry" rows="8" placeholder="Enter message for {{receiver}}" > </textarea>
+            </div>
+            <button type="submit" class="button">Submit</button>
+
+            <p style="color: red; font-weight: 600; text-align: center;">{{messages}}</p>
+        </div>
+
+    </form>
+
+{% endblock %}
+
+
+

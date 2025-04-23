@@ -1,7 +1,7 @@
 
 
 from rest_framework import serializers
-from .models import User, Confession, SavedUser, Reports, Review
+from confessions.models import *
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -25,20 +25,40 @@ class ConfessionSerializer(serializers.ModelSerializer):
         fields = '__all__'
     pass
 
+
+
+class UserSentConfessionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserSentConfession
+        fields = '__all__'
+
+    pass
+
+
+class ConfessionReportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ConfessionReport
+        fields = '__all__'
+
+
+
 class SavedUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = SavedUser
         fields = '__all__'
 
 
+
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reports
         fields = '__all__'
+    
+    pass
 
 
 class ReviewSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Review
         fields = '__all__'
+    pass

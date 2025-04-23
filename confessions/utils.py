@@ -5,6 +5,8 @@ import random
 ALL_LETTERS = string.printable #comprise of all characters in the form: digits + lowercase + uppercase + symbols + whitespace
 ALL_LETTER_LENGTH: int = len(ALL_LETTERS)
 
+
+# for handling encryption 
 def encryptStr(word: str) -> str:
     
     enc: str = ''
@@ -22,6 +24,7 @@ def encryptStr(word: str) -> str:
     return enc
 
 
+#for handling the decryption
 def decryptStr(encryptedWord: str):
 
     dec: str = ''
@@ -38,6 +41,7 @@ def decryptStr(encryptedWord: str):
     return dec
 
 
+# adding zeros to the number generated 
 def leadingZeros(number: int) -> str:
 
     zeros: str = ''
@@ -48,7 +52,8 @@ def leadingZeros(number: int) -> str:
     return f'{zeros}{number}'
 
 
- 
+
+# generates a random number for the otp.
 def generateRandomNumber() -> str:
 
     #first three numbers
@@ -60,5 +65,7 @@ def generateRandomNumber() -> str:
     return f'{first_three_numbers}-{second_three_numbers}'
 
 
+
 def detailFormat(message:str) -> dict:
     return {'detail': message}
+

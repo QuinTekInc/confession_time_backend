@@ -1,0 +1,36 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verify Email - Confession Time</title>
+        <link rel="stylesheet" href="{% static 'css/form-style.css' %}" />
+
+    </head>
+
+    <body>
+
+        <div class="form-container">
+
+            <h2>Verify Email</h2>
+
+            <p>Enter the <b>6</b>-digit code sent to your email "{{email}}"</p>
+
+            <form method="POST" action=""> 
+                {% csrf_token %}
+    
+                <input type="number" class="input-field" placeholder="Enter verification Code">
+    
+                <button type="submit"  class="submit-button">Verify</button>
+                
+            </form>
+    
+        </div>
+
+    </body>
+</html>
